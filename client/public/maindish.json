@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.postimg.cc/YqB7C5Yh/1652245560-1-1-1269327207.jpg",
+    "name": "Thai Fried Chicken",
+    "totalPiece": "8 Piece",
+    "price": "450"
+  },
+  {
+    "id": 2,
+    "img": "https://i.postimg.cc/xjzYYfkw/276968-Slow-Cooked-Stew-Meat-Chili-ddmfs-3x4-8763-6c1870c92173485481875c92f468f7b0.jpg",
+    "name": "Fried Chicken",
+    "totalPiece": "4 Piece",
+    "price": "360"
+  },
+  {
+    "id": 3,
+    "img": "https://i.postimg.cc/Gmqnz9Ny/53094926.jpg",
+    "name": "Chicken Garlic Sauce",
+    "totalPiece": "1 Piece",
+    "price": "400"
+  },
+  {
+    "id": 4,
+    "img": "https://i.postimg.cc/T3RXrnkx/batter-fried-chicken-1200.jpg",
+    "name": "Thai Sweet",
+    "totalPiece": "1 Piece",
+    "price": "430"
+  },
+  {
+    "id": 5,
+    "img": "https://i.postimg.cc/PrbjpSQK/beef-curry-kerala-style-meat-600nw-2061150848.webp",
+    "name": "Chicken Masala",
+    "totalPiece": "8 Piece",
+    "price": "420"
+  },
+  {
+    "id": 6,
+    "img": "https://i.postimg.cc/8CcQYNQn/Beef-Sizzling-Boneless-gravy.jpg",
+    "name": "Chicken Chili",
+    "totalPiece": "1 Piece",
+    "price": "350"
+  },
+  {
+    "id": 7,
+    "img": "https://i.postimg.cc/SKPFF3mQ/Chili-Beef-FB-Thumbnail-2.jpg",
+    "name": "Beef Masala",
+    "totalPiece": "10 Piece",
+    "price": "380"
+  },
+  {
+    "id": 8,
+    "img": "https://i.postimg.cc/50FcxgtB/download.jpg",
+    "name": "Beef Chili Vegetables",
+    "totalPiece": "1 Piece",
+    "price": "350"
+  },
+  {
+    "id": 9,
+    "img": "https://i.postimg.cc/6qdDZQnT/hat-yai-fried-chicken-blog.jpg",
+    "name": "Prawn Masala",
+    "totalPiece": "2 Person",
+    "price": "400"
+  },
+  {
+    "id": 10,
+    "img": "https://i.postimg.cc/brX7dnGK/images.jpg",
+    "name": "Chicken Sizzling",
+    "totalPiece": "3 Person",
+    "price": "420"
+  },
+  {
+    "id": 11,
+    "img": "https://i.postimg.cc/VsnypKp1/mixed-vegetable-curry.jpg",
+    "name": "Chicken Chilli Onion",
+    "totalPiece": "2 Person",
+    "price": "420"
+  },
+  {
+    "id": 12,
+    "img": "https://i.postimg.cc/15rk5fyj/Prawns-Masala-min.jpg",
+    "name": "Beef Sizzling",
+    "totalPiece": "3 Person",
+    "price": "440"
+  },
+  {
+    "id": 13,
+    "img": "https://i.postimg.cc/fTs4NxQd/Thai-Sweet-Sour-Chicken-02.jpg",
+    "name": "Beef Chilli Onion",
+    "totalPiece": "2 Person",
+    "price": "400"
+  },
+  {
+    "id": 14,
+    "img": "https://i.postimg.cc/VsnypKp1/mixed-vegetable-curry.jpg",
+    "name": "Mixed Vegetable",
+    "totalPiece": "1 Piece",
+    "price": "200"
+  }
+]

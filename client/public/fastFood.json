@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "King Burger",
+    "totalPiece": "1 Piece",
+    "price": "300",
+    "img": "https://i.postimg.cc/C5jLr7GL/burger-king-yeti-super-one-pound-beef-burger.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Chicken Burger",
+    "totalPiece": "1 Piece",
+    "price": "200",
+    "img": "https://i.postimg.cc/BQQ8b94q/opt-aboutcom-coeus-resources-content-migration-serious-eats-seriouseats-com-images-2015-0.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Club Sandwich",
+    "totalPiece": "1 Piece",
+    "price": "300",
+    "img": "https://i.postimg.cc/HnSkXndT/Club-sandwich-at-Caf-Picnic.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chicken Sandwich",
+    "totalPiece": "1 Piece",
+    "price": "180",
+    "img": "https://i.postimg.cc/zGyVwCy6/Chicken-Mayonnaise-Sandwich.jpg"
+  },
+  {
+    "id": 5,
+    "name": "French Fries",
+    "totalPiece": "1 Piece",
+    "price": "150",
+    "img": "https://i.postimg.cc/MGRHNzbY/frozen-french-fries-in-air-fryer-500x500.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chicken Wings",
+    "totalPiece": "6 Piece",
+    "price": "250",
+    "img": "https://i.postimg.cc/WpS3QWrx/Sweet-and-Spicy-Sriracha-Chicken-Wings-0-6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Chicken Ball",
+    "totalPiece": "6 Piece",
+    "price": "300",
+    "img": "https://i.postimg.cc/rsypDx6h/FNK-CHICKEN-PARM-BALLS-H-s4x3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Prawn Ball",
+    "totalPiece": "4 Piece",
+    "price": "400",
+    "img": "https://i.postimg.cc/SsfsQVP2/prawn-balls-23044-16x9.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Crispy Fried Chicken",
+    "totalPiece": "1 Piece",
+    "price": "120",
+    "img": "https://i.postimg.cc/Z5X0wW3R/Fried-Chicken-4-1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Thai Fried Chicken",
+    "totalPiece": "1 Piece",
+    "price": "170",
+    "img": "https://i.postimg.cc/JnL0WSpC/hat-yai-fried-chicken-blog.jpg"
+  }
+]

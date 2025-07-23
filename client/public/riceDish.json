@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.postimg.cc/ht7dwbr9/Schezwan-Paneer-Fried-Rice-2-1.jpg",
+    "name": "Food Bus Special Fried Rice",
+    "totalPiece": "3 Person",
+    "price": "420"
+  },
+  {
+    "id": 2,
+    "img": "https://i.postimg.cc/Z5tVRRCz/Teriyaki-Chicken-Fried-Rice-3-3.jpg",
+    "name": "Chicken Fried Rice",
+    "totalPiece": "2 Person",
+    "price": "280"
+  },
+  {
+    "id": 3,
+    "img": "https://i.postimg.cc/xTb6nHjP/0190ba07-a9bf-763e-b7e1-e89a55379f7e.jpg", 
+    "name": "Egg Fried Rice",
+    "totalPiece": "2 Person",
+    "price": "250"
+  },
+  {
+    "id": 4,
+    "img": "https://i.postimg.cc/jjjgV1DD/vegetable-egg-fried-rice-photo-1.jpg",
+    "name": "Vegetable Fried Rice",
+    "totalPiece": "2 Person",
+    "price": "220"
+  },
+  {
+    "id": 5,
+    "img": "https://i.postimg.cc/GmFzsCy8/DSC-0338-2-750x500.jpg",
+    "name": "Prawn Fried Rice",
+    "totalPiece": "2 Person",
+    "price": "340"
+  }
+]
+
+
