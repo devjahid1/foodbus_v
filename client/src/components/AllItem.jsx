@@ -7,6 +7,7 @@ const BookingAndItems = () => {
   const [items, setItems] = useState([]);
   const [bookings, setBookings] = useState([]);
   const [pendingBookings, setPendingBookings] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const fetchItems = () => {
     fetch("http://localhost:5000/menu")
@@ -27,6 +28,24 @@ const BookingAndItems = () => {
     setPendingBookings(storedPending);
   }, []);
 
+  // --- Filtered Data ---
+  const filteredItems = items.filter((item) =>
+    item.name?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const filteredPendingBookings = pendingBookings.filter((booking) =>
+    booking.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    booking.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    String(booking.phone || "").includes(searchTerm)
+  );
+
+  const filteredBookings = bookings.filter((booking) =>
+    booking.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    booking.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    String(booking.phone || "").includes(searchTerm)
+  );
+
+  // --- Item Handlers ---
   const handleDeleteItem = (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -38,9 +57,7 @@ const BookingAndItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/menu/${id}`, {
-          method: "DELETE",
-        })
+        fetch(`http://localhost:5000/menu/${id}`, { method: "DELETE" })
           .then((res) => res.json())
           .then(() => {
             fetchItems();
@@ -81,6 +98,7 @@ const BookingAndItems = () => {
     });
   };
 
+  // --- Booking Handlers ---
   const handleDeleteBooking = (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -92,9 +110,7 @@ const BookingAndItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/booking/${id}`, {
-          method: "DELETE",
-        })
+        fetch(`http://localhost:5000/booking/${id}`, { method: "DELETE" })
           .then((res) => res.json())
           .then(() => {
             fetchBookings();
@@ -186,10 +202,22 @@ const BookingAndItems = () => {
         </section>
       </div>
 
+      {/* Search Bar */}
+      <div className="w-full max-w-[1440px] mx-auto px-4 mt-8 mb-6">
+        <input
+          type="text"
+          placeholder="Search by name, email, or phone..."
+          className="w-full p-3 border border-gray-600 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
       <div className="w-full max-w-[1440px] mx-auto px-4 mt-10">
+        {/* Food Items */}
         <h2 className="text-2xl font-bold mb-6">All Food Items</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
-          {items.map((item) => (
+          {filteredItems.map((item) => (
             <div key={item.id} className="bg-green-200 shadow-md rounded-lg p-4 flex flex-col items-center">
               <img src={item.image} alt={item.name} className="w-[120px] h-[100px] object-cover rounded-md" />
               <h3 className="text-lg font-semibold mt-2">{item.name}</h3>
@@ -206,9 +234,10 @@ const BookingAndItems = () => {
           ))}
         </div>
 
+        {/* Pending Bookings */}
         <h2 className="text-2xl font-bold mb-6">Pending Bookings</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          {pendingBookings.map((booking, index) => (
+          {filteredPendingBookings.map((booking, index) => (
             <div key={index} className="bg-yellow-100 shadow-md rounded-lg p-4 space-y-2">
               <p><span className="font-semibold">Name:</span> {booking.name}</p>
               <p><span className="font-semibold">Email:</span> {booking.email}</p>
@@ -233,9 +262,10 @@ const BookingAndItems = () => {
           ))}
         </div>
 
+        {/* Confirmed Bookings */}
         <h2 className="text-2xl font-bold mb-6">Confirmed Bookings</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {bookings.map((booking) => (
+          {filteredBookings.map((booking) => (
             <div key={booking.id} className="bg-green-200 mb-5 shadow-md rounded-lg p-4 space-y-2">
               <p><span className="font-semibold">Name:</span> {booking.name}</p>
               <p><span className="font-semibold">Email:</span> {booking.email}</p>

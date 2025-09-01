@@ -19,7 +19,7 @@ const Navbar = () => {
           <motion.h1
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 2, ease: "easeOut" }}
+  transition={{ duration: 3, ease: "easeOut" }}
   className="text-[32px] lg:text-[60px] font-pacifico text-center"
 >
   <span className="text-[#FE2833]">Celebrate</span> in Style <br />
